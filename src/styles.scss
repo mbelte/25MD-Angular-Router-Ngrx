@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --c-text: #555555;
+    --c-pink: #ed0b70;
+    --c-pink-light: #f34e99;
+    --c-dark: #301008;
+    --c-green: #4cbfa6;
+    --c-light: #f6ebf4;
+    --c-white: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

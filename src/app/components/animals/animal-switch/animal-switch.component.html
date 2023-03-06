@@ -1,0 +1,12 @@
+<div class="wrap">
+    <label class="toggle">    
+        <span class="toggle-label">Show {{ typeFilter }}s</span>
+        <input 
+            class="toggle-checkbox" 
+            type="checkbox" 
+            [checked]="isChecked"
+            (change)="switchHandler()"
+        >
+        <div class="toggle-switch"></div>
+    </label>
+</div>

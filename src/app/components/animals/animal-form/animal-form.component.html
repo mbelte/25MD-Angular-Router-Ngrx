@@ -1,0 +1,30 @@
+<form 
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+    class="form"
+>
+    <input 
+        type="text" 
+        class="input" 
+        placeholder="Add new animal ..."
+        formControlName="name"
+    >
+    <select 
+        class="select"
+        formControlName="type"
+        (change)="onSelectChange($event)"
+    >
+        <option 
+            *ngFor="let type of animaltypes; let i as index" 
+            value="{{ type }}"
+        >
+        {{ type }}
+        </option>
+    </select>
+    <button 
+        class="btn"
+        [disabled]="!form.valid"
+    >
+        Add
+    </button>
+</form>

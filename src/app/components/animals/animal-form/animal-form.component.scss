@@ -1,0 +1,39 @@
+.form {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 20px;
+}
+
+.input, select {
+    border: none;
+    border-radius: 3px;
+    outline: 3px solid transparent;
+    font-size: 20px;
+    color: var(--c-text);
+    padding: 10px 20px;
+    transition: outline .3s;
+
+    &:focus {
+        outline-color: var(--c-pink);
+    }
+}
+
+.btn {
+    background-color: var(--c-pink-light);
+    color: var(--c-white);
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color .3s;
+
+    &:hover {        
+        background-color: var(--c-pink);
+    }
+}
+
+.btn:disabled {
+    background-color: var(--c-light);
+    cursor: not-allowed;
+}
